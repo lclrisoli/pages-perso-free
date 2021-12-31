@@ -126,7 +126,27 @@
             <script type='text/javascript'>
 				<!--
 				var browser = get_browser();
-				document.getElementById( "yours" ).insertAdjacentHTML( "afterbegin", "<img class='puceNiveau2' alt='" + browser.name + "' src='./png/" + browser.name + ".png' width='16' height='16'>" );
+				
+				var imgBrowser = "N/A";
+				switch( browser.name ) {
+					case "Firefox":
+						imgBrowser = "firefox.png";
+						break;
+					case "Edge":
+						imgBrowser = "edge.png";
+						break;
+					case "Opera":
+						imgBrowser = "opera.png";
+						break;
+					case "Chrome":
+						imgBrowser = "chrome.png";
+						break;
+					case "IE":
+						imgBrowser = "ie.png";
+						break;
+				}
+				
+				document.getElementById( "yours" ).insertAdjacentHTML( "afterbegin", "<img class='puceNiveau2' alt='" + browser.name + "' src='./png/" + imgBrowser + "' width='16' height='16'>" );
 				document.getElementById( "yours" ).insertAdjacentHTML( "beforeend", browser.name + " - "  + browser.version );
 				-->
 			</script>
