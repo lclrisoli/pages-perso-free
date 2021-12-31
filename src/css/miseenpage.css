@@ -1,0 +1,29 @@
+
+body.habillage{
+    padding: 0px;
+    margin: 10px;
+    color: #008000;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 0.5cm;
+}
+
+
+p.titre{
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    line-height: 0.5cm;
+}
+
+
+p.paragraphe{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 0.7cm;
+}
