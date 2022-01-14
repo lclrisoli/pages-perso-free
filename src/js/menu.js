@@ -82,6 +82,13 @@ function ajouterMenu(menu){
     for(var i=0; i<menu.length; i++) this.document.write(menu[i].formatHTMLSousMenus);
 }
 
+
+function recadreSousMenu(sousMenu){
+	var sousMenu=document.getElementById(sousMenu);
+	sousMenu.style.top = parseInt(sousMenu.style.top, 10) + 1 + "px";
+}
+
+
 function afficherMenu(){
     var indiceMenu;
 
@@ -97,4 +104,39 @@ function afficherMenu(){
     this.menu[indiceMenu].ajouterArticle("A propos", "./htm/aide/apropos.htm");
 
     this.ajouterMenu(menu);
+
+    loadScript("./js/browser.js",
+    	function(){
+    		switch(get_browser().name) {
+    			case 'Edge':
+    			case 'Opera':
+    			case 'Chrome':
+    				recadreSousMenu("Aide");
+    				break;
+    		}
+    	}
+    );
+}
+
+
+function loadScript(url, callback){
+    var script = document.createElement("script")
+    script.type = "text/javascript";
+
+    if (script.readyState){  //IE
+        script.onreadystatechange = function(){
+            if (script.readyState == "loaded" ||
+                    script.readyState == "complete"){
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {  //Others
+        script.onload = function(){
+            callback();
+        };
+    }
+
+    script.src = url;
+    document.body.appendChild(script);
 }
