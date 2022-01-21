@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href='./'>
+        <meta name='author' content='RISOLI Lorenzo'>
+        <meta name='version' content='1.0'>
+        <meta name='date' content='January 20, 2022'>
+        <meta name='keywords' content='Lorenzo RISOLI, Loris'>
+        <meta name='description' content='Pages personnelles - Lorenzo RISOLI'>
+        <meta name='generator' content='UltraEdit Portable Text/Hex Editor (x64) Version 28.00.0.116'>
+        <meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+        <meta http-equiv='Content-Style-Type' content='text/css2'>
+        <link rel='stylesheet' type='text/css' href='./css/menu.css'>
+        <link rel='stylesheet' type='text/css' href='./css/miseenpage.css'>
+        <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
+        <link rel='icon' type='image/png' href='./png/free.png'>
+        <title>Pages personnelles - Lorenzo RISOLI - Publication</title>
+        <script type='text/javascript' src='./js/bandeau.js'></script>
+        <script type='text/javascript' src='./js/menu.js'></script> 
+    </head>
+    <body class='habillage'>
+    	<a id='top'></a>
+        <script type='text/javascript'>
+            <!--
+            afficherBandeau();
+            afficherMenu();
+            -->
+        </script>
+        <p class='titre'>
+            Publication
+        </p>
+        <p class='paragraphe' style='margin-top: 30px; text-align: right'>
+        	<a href='./htm/intranet/transfert.php'>Liste des transferts</a>
+        </p>
+        <p class='paragraphe' style='margin-top: 10px'>
+            <u>Encodage du fichier</u>
+            <br>
+            <code>
+            	uuencode -m file.png file.png > file.png.txt
+            <br>
+             	split -l 10000 file.png.txt file.png.txt_
+            </code>
+        </p>
+        <p class='paragraphe' style='margin-top: 10px'>
+            <u>Décodage du fichier</u>
+            <br>
+            <code>
+            	dos2unix file.png.txt_*
+            <br>
+            	cat file.png.txt_* > file.png.txt
+            <br>
+             	uudecode -o file.png file.png.txt
+            </code>
+        </p>
+        <br>
+		<form method='post' action='./htm/intranet/publication.php'>
+        	<p class='paragraphe' style='margin-top: 30px'>
+				<label for='file_name'>Nom du fichier:</label>
+				<input type='text' name='file_name' size='40' required/>
+				<input type='submit' value='Publier'/>
+        	</p>
+        	<p class='paragraphe' style='margin-top: 15px'>
+        		<label for='file_core'>Corps du fichier:</label>
+        	</p>
+        	<p class='paragraphe'>
+				<textarea rows=10000 cols=60 name='file_core' required></textarea>			
+        		<a href='./htm/intranet/publication.htm#top'>Retour en haut de page</a>
+        	</p>
+		</form>
+    </body>
+</html>

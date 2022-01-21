@@ -92,13 +92,17 @@ function recadreSousMenu(sousMenu){
 function afficherMenu(){
     var indiceMenu;
 
-    this.menu=new Array(2);
+    this.menu=new Array(3);
 
     indiceMenu=0;
     this.menu[indiceMenu]=new Menu(ACCUEIL, "", "", "");
+    
+    indiceMenu++;
+    this.menu[indiceMenu]=new Menu("Intranet", "94px", "74px", "83px");
+    this.menu[indiceMenu].ajouterArticle("Publication", "./htm/intranet/publication.htm");
 
     indiceMenu++;
-    this.menu[indiceMenu]=new Menu("Aide", "94px", "74px", "83px");
+    this.menu[indiceMenu]=new Menu("Aide", "94px", "130px", "83px");
     this.menu[indiceMenu].ajouterArticle("Optimisé", "./htm/aide/optimise.htm");
     this.menu[indiceMenu].ajouterArticle("Mise à jour", "./htm/aide/miseajour.htm");
     this.menu[indiceMenu].ajouterArticle("A propos", "./htm/aide/apropos.htm");
@@ -111,6 +115,7 @@ function afficherMenu(){
     			case 'Edge':
     			case 'Opera':
     			case 'Chrome':
+    				recadreSousMenu("Intranet");
     				recadreSousMenu("Aide");
     				break;
     		}
