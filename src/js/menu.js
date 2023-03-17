@@ -92,20 +92,30 @@ function recadreSousMenu(sousMenu){
 function afficherMenu(){
     var indiceMenu;
 
-    this.menu=new Array(3);
+    this.menu=new Array(4);
 
     indiceMenu=0;
     this.menu[indiceMenu]=new Menu(ACCUEIL, "", "", "");
     
     indiceMenu++;
-    this.menu[indiceMenu]=new Menu("Intranet", "94px", "74px", "83px");
+    this.menu[indiceMenu]=new Menu("Loris", "94px", "68px", "100px");
+    this.menu[indiceMenu].ajouterArticle("Actuellement", "./htm/loris/actuellement.htm");
+    this.menu[indiceMenu].ajouterArticle("Profil", "./htm/loris/profil.htm");
+    this.menu[indiceMenu].ajouterArticle("Missions", "./htm/loris/missions.htm");
+    this.menu[indiceMenu].ajouterArticle("CV", "./htm/loris/cv.htm");
+//    this.menu[indiceMenu].ajouterArticle("Parcours", "./htm/loris/parcours.htm");
+//    this.menu[indiceMenu].ajouterArticle("Coordonnées", "./htm/loris/coordonnees.htm");
+    
+    indiceMenu++;
+    this.menu[indiceMenu]=new Menu("Intranet", "94px", "109px", "83px");
     this.menu[indiceMenu].ajouterArticle("Publication", "./htm/intranet/publication.htm");
 
     indiceMenu++;
-    this.menu[indiceMenu]=new Menu("Aide", "94px", "130px", "83px");
+    this.menu[indiceMenu]=new Menu("Aide", "94px", "150px", "83px");
     this.menu[indiceMenu].ajouterArticle("Optimisé", "./htm/aide/optimise.htm");
     this.menu[indiceMenu].ajouterArticle("Mise à jour", "./htm/aide/miseajour.htm");
     this.menu[indiceMenu].ajouterArticle("A propos", "./htm/aide/apropos.htm");
+    this.menu[indiceMenu].ajouterArticle("Debug", "./htm/aide/debug.php");
 
     this.ajouterMenu(menu);
 
@@ -115,6 +125,7 @@ function afficherMenu(){
     			case 'Edge':
     			case 'Opera':
     			case 'Chrome':
+    				recadreSousMenu("Loris");
     				recadreSousMenu("Intranet");
     				recadreSousMenu("Aide");
     				break;

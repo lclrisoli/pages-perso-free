@@ -16,7 +16,7 @@
         <link rel='icon' type='image/png' href='./png/free.png'>
         <title>Pages personnelles - Lorenzo RISOLI - Optimisé</title>
         <script type='text/javascript' src='./js/bandeau.js'></script>
-        <script type='text/javascript' src='./js/menu.js'></script>        
+        <script type='text/javascript' src='./js/menu.js'></script>
         <script type='text/javascript' src='./js/browser.js'></script>
         <style type='text/css'>
             <!--
@@ -67,11 +67,11 @@
             Optimisé
         </p>
         <p class='paragraphe' style='margin-top: 30px; margin-bottom: 10px; font-weight: bold'>
-            Ce site été optimisé :
+            Ce site est optimisé :
         </p>
         <p class='retraitNiveau1'>
             <img class='puceNiveau1' alt='Disc' src='./png/disc.png' width='9' height='9'>
-            Pour une résolution d'écran minimal de 1024x768
+            Pour une résolution d'écran minimal de 1920x1080
         </p>
         <br>
         <p class='retraitNiveau1'>
@@ -81,75 +81,84 @@
         <p id='firefox' class='retraitNiveau2'>
             <img class='puceNiveau2' alt='Firefox' src='./png/firefox.png' width='16' height='16'>
             <script type='text/javascript'>
-				<!--
-				document.getElementById( "firefox" ).insertAdjacentHTML( "beforeend", "Firefox, version " + FIREFOX_VERSION );
-				-->
-			</script>
+                <!--
+                document.getElementById( "firefox" ).insertAdjacentHTML( "beforeend", "Firefox, version " + FIREFOX_VERSION );
+                -->
+            </script>
         </p>
         <p id='chrome' class='retraitNiveau2'>
             <img class='puceNiveau2' alt='Chrome' src='./png/chrome.png' width='16' height='16'>
             <script type='text/javascript'>
-				<!--
-				document.getElementById( "chrome" ).insertAdjacentHTML( "beforeend", "Chrome, version " + CHROME_VERSION );
-				-->
-			</script>
+                <!--
+                document.getElementById( "chrome" ).insertAdjacentHTML( "beforeend", "Chrome, version " + CHROME_VERSION );
+                -->
+            </script>
         </p>
         <p id='edge' class='retraitNiveau2'>
             <img class='puceNiveau2' alt='Edge' src='./png/edge.png' width='16' height='16'>
             <script type='text/javascript'>
-				<!--
-				document.getElementById( "edge" ).insertAdjacentHTML( "beforeend", "Edge, version " + EDGE_VERSION );
-				-->
-			</script>
+                <!--
+                document.getElementById( "edge" ).insertAdjacentHTML( "beforeend", "Edge, version " + EDGE_VERSION );
+                -->
+            </script>
         </p>
         <p id='opera' class='retraitNiveau2'>
             <img class='puceNiveau2' alt='Opera' src='./png/opera.png' width='16' height='16'>
             <script type='text/javascript'>
-				<!--
-				document.getElementById( "opera" ).insertAdjacentHTML( "beforeend", "Opera, version " + OPERA_VERSION );
-				-->
-			</script>
+                <!--
+                document.getElementById( "opera" ).insertAdjacentHTML( "beforeend", "Opera, version " + OPERA_VERSION );
+                -->
+            </script>
         </p>
         <p id='ie' class='retraitNiveau2'>
             <img class='puceNiveau2' alt='IE' src='./png/ie.png' width='16' height='16'>
             <script type='text/javascript'>
-				<!--
-				document.getElementById( "ie" ).insertAdjacentHTML( "beforeend", "IE, version " + IE_VERSION );
-				-->
-			</script>
+                <!--
+                document.getElementById( "ie" ).insertAdjacentHTML( "beforeend", "IE, version " + IE_VERSION );
+                -->
+            </script>
+        </p>
+        <p id='safari' class='retraitNiveau2'>
+            <img class='puceNiveau2' alt='Safari' src='./png/safari.png' width='16' height='16'>
+            <script type='text/javascript'>
+                <!--
+                document.getElementById( "safari" ).insertAdjacentHTML( "beforeend", "Safari, version " + SAFARI_VERSION );
+                -->
+            </script>
+            <img alt='Chantier' src='./png/chantier.png' width='16' height='16'> Pas encore testé
         </p>
         <p class='paragraphe' style='margin-top: 30px; margin-bottom: 10px; font-weight: bold'>
             Votre navigateur :
         </p>
         <p id='yours' class='retraitNiveau1'>
-            
+
             <script type='text/javascript'>
-				<!--
-				var browser = get_browser();
-				
-				var imgBrowser = "N/A";
-				switch( browser.name ) {
-					case "Firefox":
-						imgBrowser = "firefox.png";
-						break;
-					case "Edge":
-						imgBrowser = "edge.png";
-						break;
-					case "Opera":
-						imgBrowser = "opera.png";
-						break;
-					case "Chrome":
-						imgBrowser = "chrome.png";
-						break;
-					case "IE":
-						imgBrowser = "ie.png";
-						break;
-				}
-				
-				document.getElementById( "yours" ).insertAdjacentHTML( "afterbegin", "<img class='puceNiveau2' alt='" + browser.name + "' src='./png/" + imgBrowser + "' width='16' height='16'>" );
-				document.getElementById( "yours" ).insertAdjacentHTML( "beforeend", browser.name + " - "  + browser.version );
-				-->
-			</script>
+                <!--
+                var browser = get_browser();
+
+                var imgBrowser = "navigateur.png";
+                switch( browser.name ) {
+                    case "Firefox":
+                        imgBrowser = "firefox.png";
+                        break;
+                    case "Edge":
+                        imgBrowser = "edge.png";
+                        break;
+                    case "Opera":
+                        imgBrowser = "opera.png";
+                        break;
+                    case "Chrome":
+                        imgBrowser = "chrome.png";
+                        break;
+                    case "IE":
+                        imgBrowser = "ie.png";
+                        break;
+                }
+
+                document.getElementById( "yours" ).insertAdjacentHTML( "afterbegin", "<img class='puceNiveau2' alt='" + browser.name + "' src='./png/" + imgBrowser + "' width='16' height='16'>" );
+                document.getElementById( "yours" ).insertAdjacentHTML( "beforeend", browser.name + " - "  + browser.version );
+                -->
+            </script>
         </p>
     </body>
 </html>

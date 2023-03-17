@@ -6,11 +6,12 @@
 	
 */
 
-var FIREFOX_VERSION = 96;
-var EDGE_VERSION = 97;
-var OPERA_VERSION = 82;
-var CHROME_VERSION = 97;
+var FIREFOX_VERSION = 111;
+var EDGE_VERSION = 111;
+var OPERA_VERSION = 96;
+var CHROME_VERSION = 111;
 var IE_VERSION = 7;
+var SAFARI_VERSION = '?';
 
 
 function get_browser() {

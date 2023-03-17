@@ -15,7 +15,7 @@
         <style type='text/css'>
             <!--
             #Tableau{
-            	width: 100%;
+                width: 100%;
             }
             #Entete{
                 color: #ffffff;
@@ -63,8 +63,8 @@ $fileList = glob('./pub/*');
 
 foreach($fileList as $filename){
     if(is_file($filename)){
-        echo basename($filename), '<br>'; 
-    }   
+        echo basename($filename), '<br>';
+    }
 }
 ?>
                         </p>
