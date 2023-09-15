@@ -1,15 +1,17 @@
 
 /*
 	Update:
+		index.htm
 		miseaniveau.htm
 		optimise.htm
-	
+
+	Version: 3.1 (browser.js?v=31)	
 */
 
-var FIREFOX_VERSION = 111;
-var EDGE_VERSION = 111;
-var OPERA_VERSION = 96;
-var CHROME_VERSION = 111;
+var FIREFOX_VERSION = 117;
+var EDGE_VERSION = 116;
+var OPERA_VERSION = 102;
+var CHROME_VERSION = 117;
 var IE_VERSION = 7;
 var SAFARI_VERSION = '?';
 
