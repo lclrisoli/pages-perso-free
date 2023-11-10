@@ -3,8 +3,8 @@
     <head>
         <base href='./'>
         <meta name='author' content='RISOLI Lorenzo'>
-        <meta name='version' content='1.0'>
-        <meta name='date' content='January 20, 2022'>
+        <meta name='version' content='3.2'>
+        <meta name='date' content='Nomvember 10, 2023'>
         <meta name='keywords' content='Lorenzo RISOLI, Loris'>
         <meta name='description' content='Pages personnelles - Lorenzo RISOLI'>
         <meta name='generator' content='UltraEdit Portable Text/Hex Editor (x64) Version 28.00.0.116'>
@@ -33,24 +33,64 @@
             <a href='./htm/intranet/transfert.php'>Liste des transferts</a>
         </p>
         <p class='paragraphe' style='margin-top: 10px'>
-            <u>Encodage du fichier</u>
+            <u>Codage d'un fichier sous Windows</u>
             <br>
-            <code>
-                uuencode -m file.png file.png > file.png.txt
+            <span style='margin-left: 50px'>
+                Encodage:
+                <code>
+                    certutil -encode file.png file.png.txt
+                </code>
+            </span>
             <br>
-                split -l 10000 file.png.txt file.png.txt_
-            </code>
+            <span style='margin-left: 50px'>
+                Décodage:
+                <code>
+                    certutil -decode file.png.txt file.png                
+                </code>
+            </span>
         </p>
         <p class='paragraphe' style='margin-top: 10px'>
-            <u>Décodage du fichier</u>
+            <u>Codage d'un fichier sous Linux</u>
             <br>
-            <code>
-                dos2unix file.png.txt_*
+            <span style='margin-left: 50px'>
+                Encodage:
+                <code>
+                    uuencode -m file.png file.png > file.png.txt
+                </code>
+            </span>
             <br>
-                cat file.png.txt_* > file.png.txt
+            <span style='margin-left: 50px'>
+                Décodage:
+                <code>
+                     uudecode -o file.png file.png.txt              
+                </code>
+            </span>
+        </p>
+        <p class='paragraphe' style='margin-top: 10px'>
+            <u>Manipulation de fichier sous Linux</u>
             <br>
-                uudecode -o file.png file.png.txt
-            </code>
+            <span style='margin-left: 50px'>
+                Fractionner:
+                <code>
+                    split -l 10000 file.png.txt file.png.txt_
+                </code>
+            </span>
+            <br>
+        </p>
+        <p class='paragraphe' style='margin-left: 50px'>
+            Fusion:
+            <br>
+            <span style='margin-left: 50px'>
+                <code>
+                    dos2unix file.png.txt_*
+                </code>
+            </span>
+            <br>
+            <span style='margin-left: 50px'>
+                <code>
+                    cat file.png.txt_* > file.png.txt
+                </code>
+            </span>
         </p>
         <br>
         <form method='post' action='./htm/intranet/publication.php'>
