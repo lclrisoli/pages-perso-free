@@ -5,13 +5,13 @@
 		miseaniveau.htm
 		optimise.htm
 
-	Version: 3.2 (browser.js?v=32)	
+	Version: 3.3 (browser.js?v=33)	
 */
 
-var FIREFOX_VERSION = 119;
-var EDGE_VERSION = 119;
-var OPERA_VERSION = 104;
-var CHROME_VERSION = 119;
+var FIREFOX_VERSION = 121;
+var EDGE_VERSION = 120;
+var OPERA_VERSION = 106;
+var CHROME_VERSION = 120;
 var IE_VERSION = 7;
 var SAFARI_VERSION = '?';
 
